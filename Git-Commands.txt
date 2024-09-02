@@ -1,0 +1,33 @@
+Installation
+git init  : bsha8elo 3ala l folder
+git status : status tab3et al folder
+git add  : b7et file 3ala al raf 2enno ra2ebo
+git add . : b7et kel files yalli bel folder ta7et al mora2abe
+git commit -m "name of commit" : after git add we can do save this 5alas 3melet 2e5er te8yir bel file 5alas 7affez kelshi la hon
+git log : bye3tini kel l commit yalli 3emelon
+git checkout : w mnektob ba3da ra2em al commit yalli badna l file yerja3lo 
+git checkout master : berja3 la 2e5er te3dil ye3ni la ba3ed 2e5er commit 3emlo 
+git restore filename :  berja3 men modify la clean ( ma berja3 masalan 2eza 2ana ne2et commit w badi 2erja3 ma beraje3ni fa bsir badi checkout master)
+git restore --staged filename : benazel al file 3an al raf ye3ni 2eza 3meltelo add fini 2erja3 chila
+git revert <commit id> : btrou7 al editing yalli 3melta 3ala hayde al commit
+git config --global user.name <>
+git config --global user.email <>
+git config --global core.editor <>
+branch : howeh 3ebra 3an copy lal file w fni zid w na2es bel gile 3ala kayfi w ba3den ya bdemjo ma3 al file al 2asesi 2aw bem7i
+master branch : the initial branch of the file
+git branch <name>
+git checkout <branch name>
+git merge <branch name> : 2ana bkoun bel branch yalli badi yeh w brou7 be3mel merge lal branch  teni fo2 yalli 2ana fi
+git -D <branch name> : byem7i branch
+git branch -m old-name new-name : change name of branches
+git branch -M new-name : de8ri name jdid bel branch yalli 2ana fi
+git remote add origin https://github.com/RonyRizk/yasmina.git : be3mel origin 2abel ma dif al folder 3ala github
+git push -u origin main : byenzel al folder 3ala github
+git push bas la 3andi 3al laptop ma 7ada fi ye3mela
+git clone url : byenzel al folder men github 3al laptop 3endi
+ma 7ada bye2der yem3l push 3al repositry taba3i 
+kel l3alam fya te2ra al repositry taba3i 2eza kenet 7atetu public
+2eza 7etaytou private fini 2ana 2ello min be7e2elo yemela 3aber email
+
+git remote set-url origin <url> : if i want to change url of a folder
+
