@@ -1,18 +1,17 @@
 /* 2sd session */
-.on
-{
+.on {
     margin-right: 4%;
 }
-.off
-{
+
+.off {
     width: 180px;
     height: 400px;
-    
-   
+
+
 }
-.div1
-{
-    width:180px;
+
+.div1 {
+    width: 180px;
     height: 50px;
     background-color: rgb(255, 127, 127);
     padding: 12 12 16 67;
@@ -20,6 +19,79 @@
 }
 
 
-/* 3th session */
+/* 8th session */
 
+.div2 {
+    width: 700px;
+    height: 500px;
+    background-image: url("https://cdn.pixabay.com/photo/2024/08/26/19/08/ai-generated-9000070_960_720.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
+.div3 {
+    padding: 130 50 200 230;
+    font-size: 100px;
+    font-family: Georgia, serif;
+    color: black;
+}
+
+.div4 {
+    width: 700px;
+    height: 500px;
+    background-image: url("https://cdn.pixabay.com/photo/2012/04/10/17/38/moon-26619_960_720.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 10px dashed blue;
+}
+
+/* Container for the circles */
+/* Container for the circles */
+.div5 {
+    background-color:#282828;
+    width: 670px;
+    height: 250px;
+    position: relative;
+    border: 10px solid #FFC300;
+}
+
+/* Base styling for all circles */
+.circle {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+/* First leg of the W */
+.circle0 { left: 0px; bottom: 150px; background-color: #FF5733; } /* Red-Orange */
+.circle1 { left: 30px; bottom: 120px; background-color: #FFC300; } /* Yellow */
+.circle2 { left: 60px; bottom: 90px; background-color: #DAF7A6; } /* Light Green */
+.circle3 { left: 90px; bottom: 60px; background-color: #FF5733; } /* Red-Orange */
+.circle4 { left: 120px; bottom: 30px; background-color: #C70039; } /* Deep Red */
+.circle5 { left: 150px; bottom: 0px; background-color: #900C3F; } /* Dark Red */
+.circle6 { left: 180px; bottom: 30px; background-color: #581845; } /* Purple */
+
+/* First peak descending */
+.circle7 { left: 210px; bottom: 60px; background-color: #900C3F; } /* Dark Red */
+.circle8 { left: 240px; bottom: 90px; background-color: #FF5733; } /* Red-Orange */
+.circle9 { left: 270px; bottom: 120px; background-color: #FFC300; } /* Yellow */
+
+/* Middle valley */
+.circle10 { left: 300px; bottom: 150px; background-color: #DAF7A6; } /* Light Green */
+.circle11 { left: 330px; bottom: 120px; background-color: #FFC300; } /* Yellow */
+.circle12 { left: 360px; bottom: 90px; background-color: #FF5733; } /* Red-Orange */
+
+/* Second peak ascending */
+.circle13 { left: 390px; bottom: 60px; background-color: #900C3F; } /* Dark Red */
+.circle14 { left: 420px; bottom: 30px; background-color: #581845; } /* Purple */
+.circle15 { left: 450px; bottom: 0px; background-color: #C70039; } /* Deep Red */
+
+/* Second peak descending */
+.circle16 { left: 480px; bottom: 30px; background-color: #FF5733; } /* Red-Orange */
+.circle17 { left: 510px; bottom: 60px; background-color: #FFC300; } /* Yellow */
+.circle18 { left: 540px; bottom: 90px; background-color: #DAF7A6; } /* Light Green */
+
+/* Second leg of the W */
+.circle19 { left: 570px; bottom: 120px; background-color: #C70039; } /* Deep Red */
+.circle20 { left: 600px; bottom: 150px; background-color: #900C3F; } /* Dark Red */

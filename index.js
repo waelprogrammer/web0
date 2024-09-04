@@ -143,14 +143,49 @@ fetch('https://restcountries.com/v3.1/all') // talabet men url al ma3loumet
     .then(response => response.json()) // al jaweb taba3 url yalli henna l ma3loumet 7awelon la json
     .then(data => {                    // ba3den 3atet 2esem lal ma3loumet 2esem json 2aw 2aya chi w balech fini 2e3mel 3alayon
         let countries = document.getElementById('countries');
+        let countries1 = document.getElementById('countries1');
+        let countries2 = document.getElementById('countries2');
+        let countries3 = document.getElementById('countries3');
+        let countries4 = document.getElementById('countries4');
+        let countries5 = document.getElementById('countries5');
+        countries.style.display = 'flex';
+        countries1.style.marginRight = '20px';
+        countries2.style.marginRight = '20px';
+        countries3.style.marginRight = '20px';
+        countries4.style.marginRight = '20px';
+        
+
+        countries.appendChild(countries1);
+        countries.appendChild(countries2);
+        countries.appendChild(countries3);
+        countries.appendChild(countries4);  
+        countries.appendChild(countries5);
+
         let counter = 0;
 
 
-        data.forEach(s => {
-            if (counter < 10) {
+        data.forEach((s, index) => {
+            if (counter < 25) {
                 let country = document.createElement('div');
-                country.innerHTML = `Name of the coubtry : ${s.name.common}`;
-                countries.appendChild(country);
+                country.innerHTML = `Name of the country : ${s.name.common}`;
+                if (index < 5) {
+                    countries1.appendChild(country);
+                }
+                else if(index<10) {
+                    countries2.appendChild(country);
+                }
+                else if(index<15)
+                {
+                    countries3.appendChild(country);
+                }
+                else if(index<20)
+                {
+                    countries4.appendChild(country);
+                }
+                else if(index<25)
+                {
+                    countries5.appendChild(country);
+                }
                 counter++;
                 let capital = document.createElement('p');
                 capital.innerHTML = "capital : ";
@@ -209,35 +244,35 @@ fetch('https://restcountries.com/v3.1/all') // talabet men url al ma3loumet
 
 
 
-fetch('https://jsonplaceholder.typicode.com/users') 
-    .then(response => response.json()) 
-    .then(users => {                    
-        users.forEach(u=>{
+fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response => response.json())
+    .then(users => {
+        users.forEach(u => {
             let select = document.getElementById('select');
             let option = document.createElement('option');
-            option.innerHTML=u.name;
+            option.innerHTML = u.name;
             select.appendChild(option);
         })
     })
 
-    fetch('http://localhost:1000/names') 
-    .then(response => response.json()) 
-    .then(data1 => {                    
-       data1.forEach(d=>{
+fetch('https://web0-mq2x.onrender.com/names')
+    .then(response => response.json())
+    .then(data1 => {
+        data1.forEach(d => {
             let select1 = document.getElementById('select1');
             let option = document.createElement('option');
-            option.innerHTML=d.names;
+            option.innerHTML = d.names;
             select1.appendChild(option);
         })
     })
-    
-    fetch('http://localhost:1000/students') 
-    .then(response => response.json()) 
-    .then(data1 => {                    
-       data1.forEach(d=>{
+
+fetch('https://web0-mq2x.onrender.com/students')
+    .then(response => response.json())
+    .then(data1 => {
+        data1.forEach(d => {
             let select2 = document.getElementById('select2');
             let option = document.createElement('option');
-            option.innerHTML=`${d.Name} : ${d.Major}`;
+            option.innerHTML = `${d.Name} : ${d.Major}`;
             select2.appendChild(option);
         })
     })
