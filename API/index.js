@@ -27,6 +27,27 @@ app.get('/students', function (req, res) {
 app.get('/names', function (req, res) {
     res.send(names);
 })
+let data = [
+    {icon:'bi bi-android',title:'Android Devices',text:'Mauris velit elit, variuspus fringilla urna, quis mattis nisl dictum vitae. Donec non ultrices elit, ut euismod quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque id tellus sagittis, egestas justo quis, suscipit libero.'},
+    {icon:'bi bi-apple',title:'apple Devices',text:'blablablsblsblsbld'},
+    {icon:'bi bi-gear',title:'settings',text:'blablablsblsblsbld'},
+    {icon:'bi bi-briefcase',title:'documents',text:'blablablsblsblsbld'}
+]
+let data1 = [
+  {icon:'bi bi-android',title:'Android Devices',text:'Mauris velit elit, variuspus fringilla urna, quis mattis nisl dictum vitae. Donec non ultrices elit, ut euismod quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque id tellus sagittis, egestas justo quis, suscipit libero.'},
+  {icon:'bi bi-apple',title:'apple Devices',text:'blablablsblsblsbld'},
+  {icon:'bi bi-gear',title:'settings',text:'blablablsblsblsbld'},
+  {icon:'bi bi-briefcase',title:'documents',text:'blablablsblsblsbld'},
+  {icon:'bi bi-briefcase',title:'documents',text:'blablablsblsblsbld'},
+  {icon:'bi bi-briefcase',title:'documents',text:'blablablsblsblsbld'}
+]
+
+app.get('/services', function (req, res) {
+    res.send(data)
+  })
+  app.get('/services1', function (req, res) {
+    res.send(data1)
+  })
 
 app.listen(PORT, () => {
     console.log(`server started on port ${PORT}`);

@@ -153,12 +153,12 @@ fetch('https://restcountries.com/v3.1/all') // talabet men url al ma3loumet
         countries2.style.marginRight = '20px';
         countries3.style.marginRight = '20px';
         countries4.style.marginRight = '20px';
-        
+
 
         countries.appendChild(countries1);
         countries.appendChild(countries2);
         countries.appendChild(countries3);
-        countries.appendChild(countries4);  
+        countries.appendChild(countries4);
         countries.appendChild(countries5);
 
         let counter = 0;
@@ -171,19 +171,16 @@ fetch('https://restcountries.com/v3.1/all') // talabet men url al ma3loumet
                 if (index < 5) {
                     countries1.appendChild(country);
                 }
-                else if(index<10) {
+                else if (index < 10) {
                     countries2.appendChild(country);
                 }
-                else if(index<15)
-                {
+                else if (index < 15) {
                     countries3.appendChild(country);
                 }
-                else if(index<20)
-                {
+                else if (index < 20) {
                     countries4.appendChild(country);
                 }
-                else if(index<25)
-                {
+                else if (index < 25) {
                     countries5.appendChild(country);
                 }
                 counter++;
@@ -195,10 +192,15 @@ fetch('https://restcountries.com/v3.1/all') // talabet men url al ma3loumet
                 capital.style.cursor = 'pointer';
                 country.appendChild(capital);
                 capital.addEventListener('click', () => {
-                    let capital1 = document.createElement('span');
-                    capital1.innerHTML = `${s.capital}`;
-                    capital1.style.color = 'green';
-                    capital.appendChild(capital1);
+                    if (!capital.querySelector('span')) {   // querySelector('span'): This checks if there is already a <span> inside the container
+                        //     if (!container.querySelector('span')):
+                        //     This condition checks if the <span> element is not present in the container.
+                        //     If no <span> exists, it creates a new <span> and appends it to the container.
+                        let capital1 = document.createElement('span');
+                        capital1.innerHTML = `${s.capital}`;
+                        capital1.style.color = 'green';
+                        capital.appendChild(capital1);
+                    }
 
                 })
 
@@ -210,10 +212,12 @@ fetch('https://restcountries.com/v3.1/all') // talabet men url al ma3loumet
                 population.style.cursor = 'pointer';
                 country.appendChild(population);
                 population.addEventListener('click', () => {
-                    let population1 = document.createElement('span');
-                    population1.innerHTML = `${s.population}`;
-                    population1.style.color = 'green';
-                    population.appendChild(population1);
+                    if (!population.querySelector('span')) {
+                        let population1 = document.createElement('span');
+                        population1.innerHTML = `${s.population}`;
+                        population1.style.color = 'green';
+                        population.appendChild(population1);
+                    }
 
                 })
 
@@ -225,11 +229,13 @@ fetch('https://restcountries.com/v3.1/all') // talabet men url al ma3loumet
                 flag.style.cursor = 'pointer';
                 country.appendChild(flag);
                 flag.addEventListener('click', () => {
-                    let flag1 = document.createElement('img');
-                    flag1.src = s.flags.png;
-                    flag1.style.width = '80px';
-                    flag1.style.height = '50px';
-                    flag.appendChild(flag1);
+                    if (!flag.querySelector('img')) {
+                        let flag1 = document.createElement('img');
+                        flag1.src = s.flags.png;
+                        flag1.style.width = '80px';
+                        flag1.style.height = '50px';
+                        flag.appendChild(flag1);
+                    }
 
                 })
             }
